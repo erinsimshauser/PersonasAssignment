@@ -2,13 +2,158 @@
 
 <html>
   <head>
-    <title>Thermostat Interface</title>
+    <title>The Thermostat</title>
     <link rel="stylesheet" href="index.css">
-    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@350&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
   </head>
 
   <body>
-    <!-- TODO: put your HTML code here! -->
+    <img src ='therm.png' class="icon">
+    <h1>Overview</h1>
+    <p>This project hones in on developing personas and storyboards. For this project I chose a public facing interface (a Nest thermostat) and then observed how real users interact with it. After conducting follow up interviews, I created two personas and a storyboard for one persona. Personas provide user models that allow designers to evaluate designs and best meet a user’s needs. The goal of this project was to practice stepping into a user’s shoes and develop greater user empathy. Along the way, I learned more about users’ mental models and how to turn interviews and observations into real insights.</p>
+    <h1>Sketch & Description</h1>
+        <img src = 'sketch.png' class="sketch">
+        <p>Thermostats provide users access to and control over the heating and cooling systems of their living space. Users can operate the Nest thermostat in two ways: rotating the outer ring left and right to scroll or pressing in on the thermostat to click or select. The main screen allows users to select the temperature and the second screen provides more detailed options and features.</p>
+    <!-- Create a sketch and write a brief description of the interface.
+    The sketch can be hand-drawn and it does not have to be a masterpiece!
+    Simply get a feel for your interface and annotate its key interactive components.
+    In ~2 sentences, briefly explain the problem that the interface is trying to solve and how its key components function. -->
+    <h1>Observations</h1>
+        <p>Users were observed interacting with the thermostat given no background information. Some users had used it before and others had not.</p>
+        <h2>Key Insights</h2>
+        <ul>
+            <li>New users tried to touch the screen with their fingers before pressing down on the thermostat itself</li>
+            <li>Most users would start by setting the temperature and only some would explore more features → mostly the calendar/schedule feature</li>
+        </ul>
+        <h2>User 1</h2>
+        <ul>
+            <li>Inexperienced user</li>
+            <li>Tried to click on the screen with finger multiple times</li>
+            <ul>
+                <li>“It thought it was a touch screen, that’s what it looks like”</li>
+                <li>“I don’t like that it was misleading”</li>
+                <li>“Touch screens are more fun and easier”</li>
+            </ul>
+            <li>Accidentally scheduled a temperature change</li>
+            <li>Became frustrated with trying to do anything other than change the temperature</li>
+        </ul>
+        <h2>User 2</h2>
+        <ul>
+            <li>More experienced user, knew how to use the spin and clicking, never tried to touch the screen</li>
+            <li>Turned on the eco mode</li>
+            <ul>
+                <li>“I don’t want to waste energy when I leave the apartment”</li>
+            </ul>
+            <li>Deleted scheduled temperatures from the calendar</li>
+            <ul>
+                <li>“It tries to be too smart”</li>
+            </ul>
+            <li>Showed that it was connected to an app on their mobile phone</li>
+        </ul>
+        <h2>User 3</h2>
+        <ul>
+            <li>Only user who noticed inconsistencies in how long it said it would take to get to the new temperature</li>
+            <ul>
+                <li>“72 and a little more of a spin is 15 minutes. 72 and a little less of a spin is under 10 minutes”</li>
+                <li>“Now I’m just confused”</li>
+            </ul>
+            <li>Struggled to return to main menu after scheduling a temperature change</li>
+            <ul>
+                <li>“I don’t know how to get out of it”</li>
+                <li>“I feel like an old person right now”</li>
+            </ul>
+            <li>Experienced user</li>
+            <ul>
+                <li>“Now I know you have to spin and click, but it kind of makes you think that it’s a little touch dude”</li>
+            </ul>
+        </ul>
+
+    <!-- Write a few sentences or bullets describing the key observations you gained from observing your users.
+    Do not make any assumptions about the users’ behaviors or thought processes.
+    Make sure you note general patterns in their interactions with the interface.
+    How did the users react while using the interface? How does it differ from other users? -->
+    <h1>Interviews</h1>
+    <ol type="1">
+        <li><h2>What is your first reaction to this interface?</h2></li>
+        <ul>
+            <li>All users said it was sleek and simple. One user noted that it was not immediately intuitive how to use it (twist motion, no buttons) and that it was not clear there were features other than setting temperature.</li>
+        </ul>
+        <li><h2>How often do you set your thermostat?</h2></li>
+        <ul>
+            <li>All users said they want the temperature to change twice a day: one temperature for the day and one for night when they are sleeping. Two users actually change it everyday multiple times and one user said they only change it when their roommate makes it an undesirable temperature.</li>
+        </ul>
+        <li><h2>How do you decide when to change the temperature?</h2></li>
+        <ul>
+            <li>Most users said they decide based on how they feel, even if this is correlated with a timed routine they don’t decide based on the time. One user said they consider the outside temperature (e.g. reducing waste by not using A/C at night if it’s already cold) as well and two said they did not. </li>
+        </ul>
+        <li><h2>How easy is it to accomplish your goal? (Scale of 1-6)</h2></li>
+        <ul>
+            <li>Two users separated their answers and said 6 for setting the temperature but lower (2-3) for any other feature. One user gave it a 4 overall and said a simpler interface with two buttons would have been easier.</li>
+        </ul>
+        <li><h2>Do you use any features other than setting temperature?</h2></li>
+        <ul>
+            <li>All users said they did/would use the mobile app. Two users said they would not want to schedule temperatures because they like to change it based on feel.</li>
+            <li>One user noted that they specifically delete anything that has been scheduled because they don’t want to waste energy if they leave during the day.</li>
+            <li>Counter to that, one user said they would use a scheduling feature to set it based on their work/leaving the house schedule.</li>
+        </ul>
+        <li><h2>What do you wish you could do with this interface?</h2></li>
+        <ul>
+            <li>There were a variety of desired features: disable the scheduling entirely, adding a touch screen, adding a back button to make it easier to return to the main menu, more transparency around what the eco setting actually does, and even adding a music playing feature. Some of these wishes indicated more practical needs vs. more novel features.</li>
+        </ul>
+        <li><h2>What is most important to you in a thermostat?</h2></li>
+        <ul>
+            <li>All users said the most important thing was a thermostat that is easy and simple to use. One noted they appreciate the transparency of whether A/C or heat is being used because their thermostat at home can be unclear sometimes and they want to use the least energy. One user said the phone app would be more important to them than the actual thermostat.</li>
+        </ul>
+    </ol>
+    <h2>Overall trends:</h2>
+    <ul>
+        <li>Most users said that setting temperature was the most important and ranked this highly in terms of how easy it was to do. </li>
+        <li>For other features (scheduling, mobile app) users were not immediately aware of them or struggled to use them due to the limited funtions (twisting and clicking).</li>
+    </ul>
+    <h2>Key Differences: How users decide when to change the temperature</h2>
+    <ul>
+        <li>Some users were more focused on practicality and being eco friendly</li>
+        <ul>
+            <li>Considering outside temperature and when they leave for the day</li>
+        </ul>
+        <li>Some users were more focused on personal comfort</li>
+        <ul>
+            <li>Communal aspect of the thermostat → changing in response to other roommates</li>
+            <li>Not considering energy usage</li>
+        </ul>
+    </ul>
+    <!-- List your questions in a numbered list and summarize the responses of your interviewed users.
+    Be sure to highlight the main points or important patterns.
+    Your summary should be both concise and informative. -->
+    <h1>Personas</h1>
+        <div class="row">
+            <div class="column">
+                <img src='harry-persona.png' class="persona">
+            </div>
+            <div class="column">
+                <ul>
+                    <li>Harry is a young tech savvy college student living in an apartment with roommates for the first time. His roommates have different temperature preferences and they are often fighting over what it should be.</li>
+                    <li>Harry thought the display screen was a touch screen and gets frustrated when it's not. He expects high tech products and for him an easy to use interface would be a touch screen like his iPhone. Harry does like that he can connect the thermostat to his phone because he can change it without getting out of bed at night or in the morning. However, he wishes this was easier to set up. He finds the settings page confusing and it took him a while to find the feature he was most interested in.</li>
+                    <li>Harry represents users of a thermostat who are most concerned with their personal comfort. He does not consider the waste or energy costs or the outside temperature in using the thermostat. Harry represents the users who expressed that a touch screen would be “more fun and easier to use” and said that the phone app is more important than the actual thermostat. Harry is important for understanding younger and more tech savvy users who are accustomed to instant gratification and high tech products.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src='cam-persona.png' class="persona">
+            </div>
+            <div class="column">
+                <ul>
+                    <li>Cam is a young eco-conscious adult who works a 9-5 job living in an apartment building who routinely sets the temperature warmer during the day and colder at night. They live alone and want to be comfortable, while also not wasting energy or racking up a high bill.</li>
+                    <li>Cam is used to a thermostat with buttons rather than the twisting and clicking of the Nest. Cam likes the simplicity of it, but actually wishes it was more simple to perform actions such as scheduling temperatures. Cam changes the temperature everyday at routine times (leaving for work, coming home from work, before going to bed), so it would be much more efficient to schedule these changes everyday rather than manually changing it.</li>
+                    <li>Cam represents users who are more eco focused and waste conscious. Cam makes decisions on the temperature based on many factors such as the outside temperature and the utilities bill. Cam represents the user who said, “I feel like an old person using this.” This user appreciates the additional features, but wants something more accessible. They represent a more practical user who still wants to be comfortable but also have control over how much energy they are consuming.</li>
+                </ul>
+            </div>
+        </div>
+    <h1>Storyboard</h1>
+    <p>This storyboard depicts High Maintenance Harry navigating one of his first nights at school.</p>
+        <img src='storyboard.png' class="story">
   </body>
 </html>
